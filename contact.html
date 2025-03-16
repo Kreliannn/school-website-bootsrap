@@ -4,13 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PCNL - Contact Us</title>
-  <!-- Bootstrap 3 CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- jQuery and Bootstrap JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
 <body>
 
@@ -41,8 +39,8 @@
     </div>
   </nav>
  
-  <!-- Header Section -->
-  <div class="jumbotron" style="background-color: #0056a6; color: white; margin-bottom: 30px; margin-top: 30px;">
+
+  <div class="jumbotron header" style="background-color: #0056a6; color: white; margin-bottom: 30px; margin-top: 30px;">
     <div class="container text-center">
       <h1>CONTACT US</h1>
       <p>Get in touch with Philippine College of Northwestern Luzon</p>
@@ -53,7 +51,7 @@
   <div class="container">
     <div class="row">
       <!-- Map Section -->
-      <div class="col-md-8">
+      <div class="leftSide col-md-8">
         <div class="panel panel-default">
           <div class="panel-heading" style="background-color: #0056a6; color: white; border-color: #0056a6;">
             <h3 class="panel-title"><i class="fa fa-map-marker"></i> OUR LOCATION</h3>
@@ -72,7 +70,7 @@
       
       <!-- Contact Information -->
       <div class="col-md-4">
-        <div class="panel panel-default">
+        <div class="rightSide panel panel-default">
           <div class="panel-heading" style="background-color: #0056a6; color: white; border-color: #0056a6;">
             <h3 class="panel-title"><i class="fa fa-info-circle"></i> CONTACT INFORMATION</h3>
           </div>
@@ -128,7 +126,7 @@
         </div>
         
         <!-- Social Media Links -->
-        <div class="panel panel-default">
+        <div class="rightSide panel panel-default">
           <div class="panel-heading" style="background-color: #0056a6; color: white; border-color: #0056a6;">
             <h3 class="panel-title"><i class="fa fa-share-alt"></i> CONNECT WITH US</h3>
           </div>
@@ -143,7 +141,7 @@
     </div>
     
     <!-- Contact Form -->
-    <div class="row">
+    <div class="row leftSide">
       <div class="col-md-12">
         <div class="panel panel-default">
           <div class="panel-heading" style="background-color: #0056a6; color: white; border-color: #0056a6;">
@@ -212,7 +210,7 @@
     </div>
     
     <!-- FAQ Section -->
-    <div class="row">
+    <div class="row leftSide">
       <div class="col-md-12">
         <div class="panel panel-default">
           <div class="panel-heading" style="background-color: #0056a6; color: white; border-color: #0056a6;">
@@ -220,7 +218,8 @@
           </div>
           <div class="panel-body">
             <div class="panel-group" id="accordion">
-              <div class="panel panel-default">
+
+              <div class="left panel panel-default">
                 <div class="panel-heading">
                   <h4 class="panel-title">
                     <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
@@ -235,7 +234,7 @@
                 </div>
               </div>
               
-              <div class="panel panel-default">
+              <div class="left panel panel-default">
                 <div class="panel-heading">
                   <h4 class="panel-title">
                     <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
@@ -250,7 +249,7 @@
                 </div>
               </div>
               
-              <div class="panel panel-default">
+              <div class="left panel panel-default">
                 <div class="panel-heading">
                   <h4 class="panel-title">
                     <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
@@ -303,11 +302,19 @@
       <hr style="border-top: 1px solid rgba(255,255,255,0.2);">
       <div class="row">
         <div class="col-md-12 text-center">
-          <p>&copy; <span id="year">2024</span> Copyright | Philippine College of Northwestern Luzon</p>
+          <p>&copy; <span id="year">2025</span> Copyright | Philippine College of Northwestern Luzon</p>
         </div>
       </div>
     </div>
   </footer>
 
+  <script>
+       gsap.from(".header", {duration: 1, y: -150, opacity: 0, ease: "bounce"});
+       gsap.from(".leftSide", {duration: 1.5, x: -100, opacity: 0, stagger : 1});
+       gsap.from(".left", {duration: 1, x: -100, opacity: 0, stagger : 0.5, delay : 2.5});
+       gsap.from(".rightSide", {duration: 1.5, x: 100, opacity: 0, stagger : 1});
+
+       
+  </script>
 </body>
 </html>

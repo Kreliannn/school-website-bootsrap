@@ -11,6 +11,8 @@
   <!-- jQuery and Bootstrap JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
 </head>
 <body>
   <!-- Navbar -->
@@ -42,7 +44,7 @@
   </nav>
 
   <!-- School Name Banner -->
-  <div class="container-fluid text-center" style="background-color: #0056a6; color: white; padding: 15px 0; margin-top: 50px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
+  <div class="header container-fluid text-center" style="background-color: #0056a6; color: white; padding: 15px 0; margin-top: 50px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
     <div class="container">
       <h1 class="hidden-xs" style="font-weight: bold; margin: 0; letter-spacing: 1px; font-size: 28px;">PHILIPPINE COLLEGE OF NORTHWESTERN LUZON</h1>
       <h1 class="visible-xs" style="font-weight: bold; margin: 0; letter-spacing: 1px; font-size: 20px;">PHILIPPINE COLLEGE OF NORTHWESTERN LUZON</h1>
@@ -57,19 +59,19 @@
         <div class="">
           <div class="panel-body">
             <div>
-                <h1 class="hidden-xs" style="font-size: 45px; font-weight: bold;">
+                <h1 class="leftSide hidden-xs" style="font-size: 45px; font-weight: bold;">
                     "An Investment in Knowledge Pays the Best Interest"
                 </h1>
                   
-                <h1 class="visible-xs text-center" style="font-size: 28px; font-weight: bold;">
+                <h1 class="leftSide visible-xs text-center" style="font-size: 28px; font-weight: bold;">
                     "An Investment in Knowledge Pays the Best Interest"
                 </h1>
 
-                <p class="text-muted text-xs">
+                <p class="leftSide text-muted text-xs">
                     Learning and education are the most valuable investments you can make, as they lead to greater opportunities, personal growth, and long-term success.
                 </p>
             </div>
-            <a href="about.html" class="btn btn-primary btn-md ">Learn More</a>
+            <a href="about.html" class="leftSide btn btn-primary btn-md ">Learn More</a>
           </div>
         </div>
       </div>
@@ -94,7 +96,7 @@
           </ol>
 
           <!-- Wrapper for slides -->
-          <div class="carousel-inner" role="listbox">
+          <div class="rightSide carousel-inner " role="listbox">
             <div class="item active">
               <img src="PCNL BYRON/image0.jpg" alt="Image 0" style="width: 100%; height: 400px; object-fit: cover;">
               <div class="carousel-caption">
@@ -154,7 +156,7 @@
   <div class="container-fluid bg-info" style="margin-top: 30px; padding: 30px 0; background-color: #f0f5fa !important;">
     <div class="container">
       <div class="row">
-        <div class="col-md-3 col-sm-6">
+        <div class="col-md-3 col-sm-6 bottomSide">
           <div class="thumbnail text-center">
             <div class="caption">
               <span class="fa fa-graduation-cap fa-3x text-primary"></span>
@@ -163,8 +165,8 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="thumbnail text-center">
+        <div class="col-md-3 col-sm-6 bottomSide">
+          <div class="thumbnail text-center ">
             <div class="caption">
               <span class="fa fa-calendar fa-3x text-primary"></span>
               <h3>Events</h3>
@@ -172,7 +174,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3 col-sm-6">
+        <div class="col-md-3 col-sm-6 bottomSide">
           <div class="thumbnail text-center">
             <div class="caption">
               <span class="fa fa-users fa-3x text-primary"></span>
@@ -181,7 +183,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3 col-sm-6">
+        <div class="col-md-3 col-sm-6 bottomSide">
           <div class="thumbnail text-center">
             <div class="caption">
               <span class="fa fa-newspaper-o fa-3x text-primary"></span>
@@ -233,14 +235,18 @@
     </div>
   </footer>
 
-  <script>
-    // Auto-update year in footer
-    document.getElementById('year').textContent = new Date().getFullYear();
+  <script defer>
+
+    gsap.from(".header", {duration: 1, y: -150, opacity: 0, ease: "bounce"});
+    gsap.from(".leftSide", {duration: 1.5, x: -100, opacity: 0, stagger : 0.5});
+    gsap.from(".bottomSide", {duration: 1.5, y: 100, opacity: 0, stagger : 0.5});
+   
     
-    // Initialize Bootstrap carousel
+
+    
     $(document).ready(function(){
       $('.carousel').carousel({
-        interval: 3000
+        interval: 1000
       });
     });
   </script>

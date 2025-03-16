@@ -4,13 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PCNL - About Us</title>
-  <!-- Bootstrap 3 CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- jQuery and Bootstrap JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
 <body>
 
@@ -42,8 +40,8 @@
   </nav>
   
   <div class="main-content" style="margin-top: 30px;">
-    <!-- Header Section -->
-    <div class="jumbotron" style="background-color: #0056a6; color: white; margin-bottom: 30px;">
+
+    <div class="header jumbotron" style="background-color: #0056a6; color: white; margin-bottom: 30px;">
       <div class="container text-center">
         <h1>ABOUT US</h1>
         <p>Learn more about Philippine College of Northwestern Luzon</p>
@@ -54,7 +52,7 @@
     <div class="container">
       <div class="row">
         <!-- Vision Panel -->
-        <div class="col-md-6" style="">
+        <div class="leftSide col-md-6 " style="">
           <div class="panel panel-primary">
             <div class="panel-heading" style="background-color: #0056a6; border-color: #0056a6;">
               <h3 class="panel-title"><i class="fa fa-eye"></i> VISION</h3>
@@ -66,7 +64,7 @@
         </div>
         
         <!-- Mission Panel -->
-        <div class="col-md-6">
+        <div class="rightSide col-md-6">
           <div class="panel panel-primary">
             <div class="panel-heading" style="background-color: #0056a6; border-color: #0056a6;">
               <h3 class="panel-title"><i class="fa fa-flag"></i> MISSION</h3>
@@ -79,7 +77,7 @@
       </div>
       
       <!-- History Section -->
-      <div class="row">
+      <div class="row bottomSide">
         <div class="col-md-12">
           <div class="panel panel-default">
             <div class="panel-heading" style="background-color: #f5f5f5; border-color: #ddd;">
@@ -192,11 +190,17 @@
       <hr style="border-top: 1px solid rgba(255,255,255,0.2);">
       <div class="row">
         <div class="col-md-12 text-center">
-          <p>&copy; <span id="year">2024</span> Copyright | Philippine College of Northwestern Luzon</p>
+          <p>&copy; <span id="year">2025</span> Copyright | Philippine College of Northwestern Luzon</p>
         </div>
       </div>
     </div>
   </footer>
   
+  <script>
+       gsap.from(".header", {duration: 1, y: -150, opacity: 0, ease: "bounce"});
+       gsap.from(".leftSide", {duration: 1.5, x: -100, opacity: 0, stagger : 0.5});
+       gsap.from(".rightSide", {duration: 1.5, x: 100, opacity: 0, stagger : 0.5});
+       gsap.from(".bottomSide", {duration: 1.5, y: 100, opacity: 0, stagger : 0.5});
+  </script>
 </body>
 </html>

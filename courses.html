@@ -4,13 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PCNL - Courses</title>
-  <!-- Bootstrap 3 CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- jQuery and Bootstrap JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
 <body>
 
@@ -40,20 +38,19 @@
           </div>
         </div>
       </nav>
-  
-  <!-- Header Section -->
-  <div class="jumbotron" style="background-color: #0056a6; color: white; margin-bottom: 30px; margin-top: 20px;">
+
+  <div class="header jumbotron" style="background-color: #0056a6; color: white; margin-bottom: 30px; margin-top: 20px;">
     <div class="container text-center">
       <h1>COURSES</h1>
       <p>Explore our academic programs designed to prepare you for success</p>
     </div>
   </div>
   
-  <!-- Courses Section -->
+
   <div class="container">
     <div class="row">
       <!-- BSIT Course -->
-      <div class="col-md-12">
+      <div class="course col-md-12">
         <div class="panel panel-default">
           <div class="panel-body">
             <div class="row">
@@ -73,7 +70,7 @@
       </div>
       
       <!-- BSCRIM Course -->
-      <div class="col-md-12">
+      <div class="course col-md-12">
         <div class="panel panel-default">
           <div class="panel-body">
             <div class="row">
@@ -92,7 +89,7 @@
       </div>
       
       <!-- BSBA Course -->
-      <div class="col-md-12">
+      <div class="course col-md-12">
         <div class="panel panel-default">
           <div class="panel-body">
             <div class="row">
@@ -112,7 +109,7 @@
       </div>
       
       <!-- BEE/BSE Course -->
-      <div class="col-md-12">
+      <div class="course col-md-12">
         <div class="panel panel-default">
           <div class="panel-body">
             <div class="row">
@@ -132,7 +129,7 @@
       </div>
       
       <!-- BSA Course -->
-      <div class="col-md-12">
+      <div class="course col-md-12">
         <div class="panel panel-default">
           <div class="panel-body">
             <div class="row">
@@ -185,11 +182,18 @@
       <hr style="border-top: 1px solid rgba(255,255,255,0.2);">
       <div class="row">
         <div class="col-md-12 text-center">
-          <p>&copy; <span id="year">2024</span> Copyright | Philippine College of Northwestern Luzon</p>
+          <p>&copy; <span id="year">2025</span> Copyright | Philippine College of Northwestern Luzon</p>
         </div>
       </div>
     </div>
   </footer>
 
+
+  <script>
+    gsap.from(".header", {duration: 1.5, y: -150, opacity: 0, ease: "bounce"});
+    gsap.from(".course", {duration: 1.5, x: -150, opacity: 0,  stagger: 1});
+
+    
+  </script>
 </body>
 </html>
