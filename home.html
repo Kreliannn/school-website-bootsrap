@@ -34,6 +34,7 @@
           <li><a href="about.html">ABOUT</a></li>
           <li><a href="contact.html">CONTACT</a></li>
           <li><a href="events.html">EVENTS</a></li>
+          <li><a href="staff.html">STAFF</a></li>
         </ul>
       </div>
     </div>
@@ -73,7 +74,7 @@
       </div>
       
    
-      <div class="col-md-6">
+      <div class="col-md-6  rightSide">
         <div id="imageCarousel" class="carousel slide" data-ride="carousel">
    
           <ol class="carousel-indicators">
@@ -214,6 +215,7 @@
 
     gsap.from(".header", {duration: 1, y: -150, opacity: 0, ease: "bounce"});
     gsap.from(".leftSide", {duration: 1.5, x: -100, opacity: 0, stagger : 0.5});
+    gsap.from(".rightSide", {duration: 4,  opacity: 0, esase: "power1.out"});
     gsap.from(".bottomSide", {duration: 1.5, y: 100, opacity: 0, stagger : 0.5});
    
     
@@ -221,7 +223,7 @@
     
     $(document).ready(function(){
       $('.carousel').carousel({
-        interval: 1000
+        interval: 8000
       });
     });
   </script>
