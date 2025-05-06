@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">        
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PCNL - Staff & Faculty</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <style>
+    body {
+      padding-top: 70px;
+    }
+    .staff-card {
+      transition: transform 0.3s;
+      margin-bottom: 30px;
+      height: 100%;
+    }
+    .staff-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    .staff-photo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 20px auto;
+      border: 3px solid #0056a6;
+    }
+    .department-section {
+      margin-bottom: 40px;
+    }
+    .department-title {
+      color: #0056a6;
+      border-bottom: 2px solid #0056a6;
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+    }
+    .card-equal-height {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .card-equal-height > [class*='col-'] {
+      display: flex;
+      flex-direction: column;
+    }
+    .card-equal-height .panel {
+      flex: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-default navbar-fixed-top" style="border-bottom: 3px solid #0056a6;">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>              
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img src="PCNL BYRON/PcnlLogo.png" alt="PcnlLogo" style="height: 30px; display: inline-block; margin-right: 10px;">
+          <span style="color: #0056a6; font-weight: bold;">PCNL-AGOO</span>
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="home.html">HOME</a></li>
+          <li><a href="courses.html">COURSES</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="events.html">EVENTS</a></li>
+          <li class="active"><a href="staff.html">STAFF</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+
+  <div class="header jumbotron" style="background-color: #0056a6; color: white; margin-bottom: 30px; margin-top: 0;">
+    <div class="container text-center">
+      <h1>STAFF & FACULTY</h1>
+      <p>Meet the dedicated professionals behind Philippine College of Northwestern Luzon</p>
+    </div>
+  </div>
+
+  
+  <div class="container">
+    
+
+    <div class="department-section">
+      
+      
+      <div class="row card-equal-height">
+
+        <div class="col-md-4 col-sm-6 staff-item">
+          <div class="panel panel-default staff-card">
+            <div class="panel-body text-center">
+              <img src="PCNL BYRON/pic.jpg" alt="Dr. John Smith" class="staff-photo">
+              <h3>Dr. John Smith</h3>
+              <p class="text-muted">College President</p>
+              <hr>
+              <p><i class="fa fa-phone"></i> 09099897185</p>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="col-md-4 col-sm-6 staff-item">
+          <div class="panel panel-default staff-card">
+            <div class="panel-body text-center">
+              <img src="PCNL BYRON/pic.jpg" alt="Dr. Maria Santos" class="staff-photo">
+              <h3>Dr. Maria Santos</h3>
+              <p class="text-muted">Vice President for Academic Affairs</p>
+              <hr>
+              <p><i class="fa fa-phone"></i> 09099897185</p>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="col-md-4 col-sm-6 staff-item">
+          <div class="panel panel-default staff-card">
+            <div class="panel-body text-center">
+              <img src="PCNL BYRON/pic.jpg" alt="Dr. Robert Garcia" class="staff-photo">
+              <h3>Dr. Robert Garcia</h3>
+              <p class="text-muted">Vice President for Administration</p>
+              <hr>
+              <p><i class="fa fa-phone"></i> 09099897185</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="department-section">
+      
+      
+      <div class="row card-equal-height">
+   
+        <div class="col-md-4 col-sm-6 staff-item">
+          <div class="panel panel-default staff-card">
+            <div class="panel-body text-center">
+              <img src="PCNL BYRON/pic.jpg" alt="Prof. Elena Cruz" class="staff-photo">
+              <h3>Prof. Elena Cruz</h3>
+              <p class="text-muted">Dean, College of Education</p>
+              <hr>
+              <p><i class="fa fa-phone"></i> 09099897185</p>
+            </div>
+          </div>
+        </div>
+        
+   
+        <div class="col-md-4 col-sm-6 staff-item">
+          <div class="panel panel-default staff-card">
+            <div class="panel-body text-center">
+              <img src="PCNL BYRON/pic.jpg" alt="Prof. Michael Reyes" class="staff-photo">
+              <h3>Prof. Michael Reyes</h3>
+              <p class="text-muted">Dean, College of Business</p>
+              <hr>
+              <p><i class="fa fa-phone"></i> 09099897185</p>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="col-md-4 col-sm-6 staff-item">
+          <div class="panel panel-default staff-card">
+            <div class="panel-body text-center">
+              <img src="PCNL BYRON/pic.jpg" alt="Dr. Patricia Lim" class="staff-photo">
+              <h3>Dr. Patricia Lim</h3>
+              <p class="text-muted">Dean, College of Engineering</p>
+              <hr>
+              <p><i class="fa fa-phone"></i> 09099897185</p>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="col-md-4 col-sm-6 staff-item">
+          <div class="panel panel-default staff-card">
+            <div class="panel-body text-center">
+              <img src="PCNL BYRON/pic.jpg" alt="Prof. David Tan" class="staff-photo">
+              <h3>Prof. David Tan</h3>
+              <p class="text-muted">Department Chair, Computer Science</p>
+              <hr>
+              <p><i class="fa fa-phone"></i> 09099897185</p>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="col-md-4 col-sm-6 staff-item">
+          <div class="panel panel-default staff-card">
+            <div class="panel-body text-center">
+              <img src="PCNL BYRON/pic.jpg" alt="Prof. Sarah Mendoza" class="staff-photo">
+              <h3>Prof. Sarah Mendoza</h3>
+              <p class="text-muted">Department Chair, Mathematics</p>
+              <hr>
+              <p><i class="fa fa-phone"></i> 09099897185</p>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="col-md-4 col-sm-6 staff-item">
+          <div class="panel panel-default staff-card">
+            <div class="panel-body text-center">
+              <img src="PCNL BYRON/pic.jpg" alt="Dr. James Lee" class="staff-photo">
+              <h3>Dr. James Lee</h3>
+              <p class="text-muted">Department Chair, English</p>
+              <hr>
+              <p><i class="fa fa-phone"></i> 09099897185</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="department-section">
+
+      
+      <div class="row card-equal-height">
+    
+        <div class="col-md-4 col-sm-6 staff-item">
+          <div class="panel panel-default staff-card">
+            <div class="panel-body text-center">
+              <img src="PCNL BYRON/pic.jpg" alt="Ms. Anna Reyes" class="staff-photo">
+              <h3>Ms. Anna Reyes</h3>
+              <p class="text-muted">Registrar</p>
+              <hr>
+              <p><i class="fa fa-phone"></i> 09099897185</p>
+            </div>
+          </div>
+        </div>
+        
+ 
+        <div class="col-md-4 col-sm-6 staff-item">
+          <div class="panel panel-default staff-card">
+            <div class="panel-body text-center">
+              <img src="PCNL BYRON/pic.jpg" alt="Mr. Carlos Bautista" class="staff-photo">
+              <h3>Mr. Carlos Bautista</h3>
+              <p class="text-muted">Librarian</p>
+              <hr>
+              <p><i class="fa fa-phone"></i> 09099897185</p>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="col-md-4 col-sm-6 staff-item">
+          <div class="panel panel-default staff-card">
+            <div class="panel-body text-center">
+              <img src="PCNL BYRON/pic.jpg" alt="Ms. Sophia Diaz" class="staff-photo">
+              <h3>Ms. Sophia Diaz</h3>
+              <p class="text-muted">Student Affairs Coordinator</p>
+              <hr>
+              <p><i class="fa fa-phone"></i> 09099897185</p>
+            </div>
+          </div>
+        </div>
+        
+   
+        <div class="col-md-4 col-sm-6 staff-item">
+          <div class="panel panel-default staff-card">
+            <div class="panel-body text-center">
+              <img src="PCNL BYRON/pic.jpg" alt="Mr. Joseph Santos" class="staff-photo">
+              <h3>Mr. Joseph Santos</h3>
+              <p class="text-muted">IT Administrator</p>
+              <hr>
+              <p><i class="fa fa-phone"></i> 09099897185</p>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="col-md-4 col-sm-6 staff-item">
+          <div class="panel panel-default staff-card">
+            <div class="panel-body text-center">
+              <img src="PCNL BYRON/pic.jpg" alt="Ms. Olivia Ramos" class="staff-photo">
+              <h3>Ms. Olivia Ramos</h3>
+              <p class="text-muted">Guidance Counselor</p>
+              <hr>
+              <p><i class="fa fa-phone"></i> 09099897185</p>
+            </div>
+          </div>
+        </div>
+        
+     
+        <div class="col-md-4 col-sm-6 staff-item">
+          <div class="panel panel-default staff-card">
+            <div class="panel-body text-center">
+              <img src="PCNL BYRON/pic.jpg" alt="Mr. Benjamin Cruz" class="staff-photo">
+              <h3>Mr. Benjamin Cruz</h3>
+              <p class="text-muted">Facilities Manager</p>
+              <hr>
+              <p><i class="fa fa-phone"></i> 09099897185</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <footer class="bg-primary" style="background-color: #0056a6 !important; color: white; padding: 30px 0; margin-top: 30px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h4><strong>Contact Us</strong></h4>
+          <address>
+            <p><i class="fa fa-map-marker"></i> Agoo, La Union, Philippines</p>
+            <p><i class="fa fa-phone"></i> (123) 456-7890</p>
+            <p><i class="fa fa-envelope"></i> school@pcnl.edu.ph</p>
+          </address>
+        </div>
+        <div class="col-md-4">
+          <h4><strong>Quick Links</strong></h4>
+          <ul class="list-unstyled">
+            <li><a href="contact.html" style="color: white;" class="text-white"><i class="fa fa-angle-right"></i> message us</a></li>
+            <li><a href="events.html" style="color: white;" class="text-white"><i class="fa fa-angle-right"></i> events</a></li>
+            <li><a href="courses.html" style="color: white;" class="text-white"><i class="fa fa-angle-right"></i> courses</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4><strong>Connect With Us</strong></h4>
+          <div style="margin-top: 20px;">
+            <a href="#"  style="color: white; font-size: 24px; margin-right: 15px;"><i class="fa fa-facebook-square"></i></a>
+            <a href="#" style="color: white; font-size: 24px; margin-right: 15px;"><i class="fa fa-twitter-square"></i></a>
+            <a href="#" style="color: white; font-size: 24px; margin-right: 15px;"><i class="fa fa-instagram"></i></a>
+            <a href="#" style="color: white; font-size: 24px;"><i class="fa fa-youtube-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr style="border-top: 1px solid rgba(255,255,255,0.2);">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p>&copy; <span id="year">2025</span> Copyright | Philippine College of Northwestern Luzon</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+    
+  <script>
+  
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+
+    gsap.from(".header", {duration: 1, y: -150, opacity: 0, ease: "bounce"});
+    
+
+    gsap.from(".department-title", {
+      duration: 0.8, 
+      opacity: 0, 
+      x: -50, 
+      stagger: 0.3,
+      scrollTrigger: {
+        trigger: ".department-title",
+        start: "top 80%"
+      }
+    });
+    
+   
+    gsap.from(".staff-item", {
+      duration: 2, 
+      opacity: 0, 
+      y: 50, 
+      stagger: 0.1,
+      ease: "power1.out"
+    });
+    
+  
+    const staffCards = document.querySelectorAll('.staff-card');
+    staffCards.forEach(card => {
+      card.addEventListener('mouseenter', () => {
+        gsap.to(card.querySelector('.staff-photo'), {
+          scale: 1.1,
+          borderColor: '#0078d7',
+          duration: 0.3
+        });
+      });
+      
+      card.addEventListener('mouseleave', () => {
+        gsap.to(card.querySelector('.staff-photo'), {
+          scale: 1,
+          borderColor: '#0056a6',
+          duration: 0.3
+        });
+      });
+    });
+  </script>
+</body>
+</html>
